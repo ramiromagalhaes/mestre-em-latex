@@ -1,6 +1,6 @@
 O **Mestre em LaTeX** tem como objetivo facilitar a vida de quem está prestes a escrever sua dissertação de mestrado ou tese de doutorado em português. Ele é um modelo de dissertação que contém informações básicas para iniciantes em LaTeX, além de incluir uma série de pacotes úteis para escrever sua dissertação/tese eficientemente na língua portuguesa.
 
-**Website:** http://dmvieira.github.com/mestre-em-latex/
+**Website:** http://nelas.github.com/mestre-em-latex/
 
 Aqui a versão já adaptada para o PPGI - UFRJ e outras dissertações que queiram seguir o modelo
 
