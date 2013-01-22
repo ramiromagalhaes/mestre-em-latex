@@ -1,14 +1,6 @@
 # Notas das versões do Mestre em LaTeX
 
 Para a lista completa: http://github.com/nelas/mestre-em-latex/commits/master
-2012-01-22:
-    - Adaptado script para qualificação do PPGI - UFRJ (é possível descomentar o resto e usar mais coisas)
-    - Modificado página de título colocando logo da instituição em cima
-    - Adicionado possibilidade de colocar co-orientador
-    - Bibliografia pode ser colocada no formato da sbc ou abnt
-    - Removido natbib
-    - Usando arquivo Meta como arquivo de configurações para mais variáveis
-    - Criada tabela final com redirecionamentos
 
 2010-05-01:
     - Versão 0.2

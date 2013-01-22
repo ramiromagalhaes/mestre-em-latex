@@ -1,6 +1,7 @@
-% Mestre em LaTeX - v0.5
-% Copyleft 2008-2013 Bruno C. Vellutini - http://organelas.com/
-%
+% Mestre em LaTeX - v0.2
+% Copyleft 2008-2010 Bruno C. Vellutini - http://organelas.com/
+% Copyleft 2012-2012 Diogo Munaro Vieira
+
 % Permission is hereby granted, free of charge, to any person obtaining a copy
 % of this software and associated documentation files (the "Software"), to deal
 % in the Software without restriction, including without limitation the rights
@@ -18,7 +19,7 @@
 %
 % Ou seja, utilize e modifique os arquivos como desejar.
 % 
-% Para mais informações visite http://nelas.github.com/mestre-em-latex/
+% Para mais informações visite https://github.com/dmvieira/mestre-em-latex
 
 % Classe do documento
 \documentclass[twoside,a4paper,11pt]{report}
@@ -31,17 +32,20 @@
 
 \include{pre}   % Capa, prefácio e afins
 \include{cap1}	% Capítulo 1: Introdução
-\include{cap2}	% Capítulo 2: ...
-\include{final}	% Capítulo 3: Considerações Finais
+\include{cap2}	% Capítulo 2: Proposta de Pesquisa
+\include{cap3}	% Capítulo 3: Referencial Teórico
+\include{cap4}	% Capítulo 4: Metodologia
+\include{cap5}	% Capítulo 5: Resultados Parciais
+\include{cap6}	% Capítulo 6: Plano de Trabalho e Cronograma
 
 % Formato da bibliografia
-\bibliographystyle{apalike}
-
+% Pode ser abnt ou sbc. Os 2 estão incluídos na pasta
+\bibliographystyle{abnt}
 % Arquivo .bib
 \bibliography{mestre}
 
 % Apêndice(s)
-\include{apendice}
+%\include{apendice}
 
 % Fim do texto
 \end{document}
