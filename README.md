@@ -1,12 +1,16 @@
 O **Mestre em LaTeX** tem como objetivo facilitar a vida de quem está prestes a escrever sua dissertação de mestrado ou tese de doutorado em português. Ele é um modelo de dissertação que contém informações básicas para iniciantes em LaTeX, além de incluir uma série de pacotes úteis para escrever sua dissertação/tese eficientemente na língua portuguesa.
 
-**Website:** http://nelas.github.com/mestre-em-latex/
+**Website:** http://dmvieira.github.com/mestre-em-latex/
+
+Aqui a versão já adaptada para o PPGI - UFRJ e outras dissertações que queiram seguir o modelo
 
 ## Comece a usar
 
-**Download:** se ainda não baixou, pegue o arquivo [ZIP](https://github.com/nelas/mestre-em-latex/zipball/master) ou [TGZ](https://github.com/nelas/mestre-em-latex/tarball/master)
+**Download:** se ainda não baixou, pegue o arquivo [ZIP](https://github.com/dmvieira/mestre-em-latex/archive/master.zip)
 
-**Instruções:** acesse o [wiki do MeL](https://github.com/nelas/mestre-em-latex/wiki)
+**Instruções:** acesse o [wiki do MeL](https://github.com/dmvieira/mestre-em-latex/wiki) para instruções.
+
+Esse projeto é um fork de http://nelas.github.com/mestre-em-latex/
 
 ## Links Relevantes
 
