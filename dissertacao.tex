@@ -2,15 +2,15 @@
 \documentclass[twoside,a4paper,11pt]{report}
 
 % Pacotes e comandos customizados
-\include{pacotes}
-\include{configuracoes}
-\include{definicoes}
+\include{meta}
 
 % Início do texto
 \begin{document}
 
+\pagenumbering{roman}
 \include{pre}
 
+\pagenumbering{arabic}
 \include{cap1}
 \include{cap2}
 \include{cap3}
@@ -20,8 +20,9 @@
 % Formato da bibliografia
 % Pode ser abnt ou sbc. Os 2 estão incluídos na pasta
 \bibliographystyle{abnt}
+
 % Arquivo .bib
-\bibliography{mestre}
+\bibliography{bibliografia}
 
 % Apêndice(s)
 %\include{apendice}
