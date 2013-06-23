@@ -6,4 +6,5 @@ all :
 	bibtex $(FILE).aux
 	pdflatex $(FILE).tex
 	pdflatex $(FILE).tex
+	mk4ht oolatex $(FILE).tex
 	rm *.aux *.bbl *.toc *.out *.log *.nls *.nlo *.lof *.lot *.blg *.ilg

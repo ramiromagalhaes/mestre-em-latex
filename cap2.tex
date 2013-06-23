@@ -1,9 +1,43 @@
-%\pagestyle{empty}
 %\cleardoublepage
 \pagestyle{fancy}
 
-\chapter{Proposta de Pesquisa}\label{cap2}
+\chapter{Revisão bibliográfica}
+\label{cap2}
 
-\section{Objetivos}
+Mencione percentuais como 50\%. Cite mais gente com \cite{Otsu1979}.
+Abaixo está um algoritmo complicado de escrever.
 
-\section{Detalhamento}
+\begin{algorithm}
+\caption{Uma das versões do Adaboost.}
+\KwData{
+	$(x_1, y_1), \ldots, (x_m, y_m)$ onde $x_i \in X$ e $y_i \in \{-1, +1\}$
+}
+
+Inicie $D_1(i) = 1/m$ para $i = 1, \ldots, m$\;
+
+\For{$t = 1, \ldots, T$} {
+	Forneça $D_t$ ao aprendiz fraco e dele obtenha $h_t: X \rightarrow {-1, +1}$,
+	tal que $h_t$ minimize $\epsilon_t = Pr_{i \sim D_t}[h_t(x_i) \neq y_i]$
+
+	Seja $\alpha_t = \frac{1}{2} \ln(\frac{1 - \epsilon_t}{\epsilon_t})$
+
+	\For {i = 1, \ldots, m} {
+		\begin{equation}
+			\begin{matrix}
+				D_{t+1}(i) & = & \frac{D_t(i)}{Z_t} \times
+				\left\{
+					\begin{array}{l l}
+						e^{-\alpha_t} & \text{ se } h_t(x_i) = y_i\\
+						e^{\alpha_t} & \text{ se } h_t(x_i) \neq y_i\\
+					\end{array}
+				\right.\\
+				& = & \frac{D_t(i) e^{\alpha_t y_i h_i(x_i)}}{Z_t}
+			\end{matrix}
+		\end{equation}
+		onde $Z_t$ é um fator de normalização escolhido de modo que $D_{t+1}$ seja uma
+		distribuição.
+	}
+}
+\Return $H(x) = sign(\sum_{t=1}^{T} \alpha_t h_t(x))$.
+
+\end{algorithm}

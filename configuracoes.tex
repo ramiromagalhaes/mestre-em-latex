@@ -1,0 +1,72 @@
+%%% Pacotes utilizados %%%
+
+% Aumenta as margens internas para espiral
+\geometry{bindingoffset=10pt}
+% Só pra ajustar o layout
+\setlength{\marginparwidth}{90pt}
+
+% Espaçamento do texto para o frame
+\setlength{\fboxsep}{1em}
+
+% Faz com que as margens tenham o mesmo tamanho horizontalmente
+%\geometry{hcentering}
+
+% Caminho para as imagens que serão inseridas no documento
+\graphicspath{{./imagens/}}
+
+%\captionsetup[subfigure]{style=default, margin=0pt, parskip=0pt, hangindent=0pt, indention=0pt, singlelinecheck=true, labelformat=parens, labelsep=space}
+
+% Exemplo para inserir a figura na capa está no arquivo pre.tex (linha 7)
+% Ajuste da posição da figura no eixo Y
+%\addtolength{\wpYoffset}{-140pt}
+
+% Ajuste da posição da figura no eixo X
+%\addtolength{\wpXoffset}{36pt}
+
+%% Lista de Abreviações
+% Cria lista de abreviações
+\makenomenclature
+
+%% Notas de rodapé
+% Lidar com notas de rodapé em diversas situações
+
+% Notas criadas nas tabelas ficam no fim das tabelas
+\makesavenoteenv{tabular}
+
+% Usar os estilos do pacote fancyhdr
+\pagestyle{fancy}
+\fancypagestyle{plain}{\fancyhf{}}
+% Limpar os campos do cabeçalho atual
+\fancyhead{}
+% Número da página do lado esquerdo [L] nas páginas ímpares [O] e do lado direito [R] nas páginas pares [E]
+\fancyhead[LO,RE]{\thepage}
+% Nome da seção do lado direito em páginas ímpares
+\fancyhead[RO]{\nouppercase{\rightmark}}
+% Nome do capítulo do lado esquerdo em páginas pares
+\fancyhead[LE]{\nouppercase{\leftmark}}
+% Limpar os campos do rodapé
+\fancyfoot{}
+% Omitir linha de separação entre cabeçalho e conteúdo
+\renewcommand{\headrulewidth}{0pt}
+% Omitir linha de separação entre rodapé e conteúdo
+\renewcommand{\footrulewidth}{0pt}
+% Altura do cabeçalho
+\headheight 13.6pt
+
+% Exemplo para inserir a figura na capa está no arquivo pre.tex (linha 7)
+% Ajuste da posição da figura no eixo Y
+%\addtolength{\wpYoffset}{-140pt}
+
+% Ajuste da posição da figura no eixo X
+%\addtolength{\wpXoffset}{36pt}
+
+% Iniciais do autor
+%\renewcommand{\initialsTwo}{bcv}
+
+% Notas na margem interna
+%\reversemarginpar
+
+%% Pacotes não implementados
+% Para não sobrar espaços em branco estranhos
+%\widowpenalty=1000
+%\clubpenalty=1000

@@ -1,0 +1,35 @@
+% Alguns comandos que vou usar muito!
+
+ %use o argumento desses comando para adicionar um espaço em branco
+\newcommand{\hw}{SIGLACHATADEREPETIR \textit{EFORMATADA}}
+\newcommand{\hws}{SIGLACHATADEREPETIRNOPLURAL \textit{EFORMATADAS}}
+
+
+%% Comandos customizados devem aparecer depois do carregamento do pacote de
+% codificação (inputenc) do arquivo.
+
+% Título da dissertação
+\newcommand{\titulo}{Um título genial}
+% Nome do Programa
+\newcommand{\programa}{Programa de Pós-Graduação em Informática}
+% Nome da Área
+\newcommand{\areaprograma}{Modelos e Arquiteturas para Sistemas Inteligentes}
+% Nome do aluno
+\newcommand{\nomedoaluno}{Ramiro Pereira de Magalhães}
+% Nome do orientador
+\newcommand{\nomedoorientador}{Professor. P.}
+% Universidade, centro de pesquisa, etc
+\newcommand{\nomedolocal}{Universidade Federal do Rio de Janeiro}
+% Local da defesa
+\newcommand{\localidade}{Rio de Janeiro}
+% Palavras chave
+\newcommand{\tagstrabalho}{Texto texto}
+
+% Configurações dos links e metatags do PDF a ser gerado
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue,
+            pdfauthor={\nomedoaluno},
+            pdftitle={\titulo},
+            pdfsubject={\titulo},
+            pdfkeywords={\tagstrabalho},
+            pdfproducer={Latex},
+            pdfcreator={pdflatex}}

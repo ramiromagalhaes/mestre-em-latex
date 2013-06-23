@@ -1,0 +1,90 @@
+%%% Pacotes utilizados %%%
+
+%% Codificação e formatação básica do LaTeX
+% Suporte para português (hifenação e caracteres especiais)
+\usepackage[brazilian,english]{babel}
+
+% Codificação do arquivo
+\usepackage[utf8]{inputenc}
+
+% Mapear caracteres especiais no PDF
+\usepackage{cmap}
+
+% Codificação da fonte
+\usepackage[T1]{fontenc}
+
+% Essencial para colocar funções e outros símbolos matemáticos
+\usepackage{amsmath,amssymb,amsfonts,textcomp}
+
+\usepackage[portuguese]{algorithm2e}
+
+%% Layout
+% Customização do layout da página, margens espelhadas
+\usepackage[twoside]{geometry}
+
+%\usepackage{layout}
+
+% Para definir espaçamento entre as linhas
+\usepackage{setspace}
+
+%% Elementos Gráficos
+% Para incluir figuras (pacote extendido)
+\usepackage[]{graphicx}
+
+% Suporte a cores
+\usepackage{color}
+
+% Criar figura dividida em subfiguras
+\usepackage{subfig}
+
+% Customizar as legendas de figuras e tabelas
+\usepackage{caption}
+
+% Criar ambientes com 2 ou mais colunas
+\usepackage{multicol}
+
+% Ative o comando abaixo se quiser colocar figuras de fundo (e.g., capa)
+%\usepackage{wallpaper}
+
+%% Tabelas
+% Elementos extras para formatação de tabelas
+\usepackage{array}
+
+% Tabelas com qualidade de publicação
+\usepackage{booktabs}
+
+% Para criar tabelas maiores que uma página
+\usepackage{longtable}
+
+% adicionar tabelas e figuras como landscape
+\usepackage{lscape}
+
+%% Lista de Abreviações
+% Cria lista de abreviações
+\usepackage[notintoc,portuguese]{nomencl}
+
+%% Notas de rodapé
+% Lidar com notas de rodapé em diversas situações
+\usepackage{footnote}
+
+% Conta o número de páginas
+\usepackage{lastpage}
+
+% Adicionar bibliografia, índice e conteúdo na Tabela de conteúdo
+% Não inclui lista de tabelas e figuras no índice
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+
+%% Pontuação e unidades
+% Posicionar inteligentemente a vírgula como separador decimal
+\usepackage{icomma}
+
+% Formatar as unidades com as distâncias corretas
+\usepackage[tight]{units}
+
+%% Cabeçalho e rodapé
+% Controlar os cabeçalhos e rodapés
+\usepackage{fancyhdr}
+
+%% Links dinâmicos
+% Suporte para hipertexto, links para referências e figuras
+\usepackage{hyperref}

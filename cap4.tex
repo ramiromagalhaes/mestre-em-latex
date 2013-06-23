@@ -1,34 +1,40 @@
-%\pagestyle{empty}
 %\cleardoublepage
 \pagestyle{fancy}
 
-\chapter{Metodologia}\label{cap4}
+\chapter{Seu tema}
+\label{cap4}
 
-Metodologia aqui!
+Apresento a seguir uma bela figura. Ela está armazenada num diretório de imagens
+que configurei no arquivo ``configuracoes.tex''. Note o uso de legenda.
 
-% Outro ambiente útil é o description, como exemplificado abaixo.
-\begin{description}
-  \item[Estágio1 $(n=27)$:] Descrição minuciosa deste estágio.
-    Estou incluindo um pouco de texto extra para mostrar como a formatação fica impecável.
-    Uma boa formatação não distrai o leitor e proporciona maior clareza e prazer durante a leitura.
-  \item[Estágio2 $(n=25)$:] Descrição minuciosa deste estágio.
-    Estou incluindo um pouco de texto extra para mostrar como a formatação fica impecável.
-    Uma boa formatação não distrai o leitor e proporciona maior clareza e prazer durante a leitura.
-\end{description}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{ilustracao-shen}
+	\caption[Uma imagem esquisita \cite{opencvsite}.]{Uma imagem esquisita
+	\cite{opencvsite}.}
+	\label{fig:shen}
+\end{figure}
 
-As descrições também podem ser colocadas uma dentro da outra.
+Referencie sua figura \ref{fig:shen}. Inicie, a seguir, uma nova seção.
 
-\begin{description}
-  \item[Tipo1:] Descrição minuciosa.
-    Estou incluindo um pouco de texto extra para mostrar como a formatação fica impecável.
-    A razão $\frac{\text{núcleo}}{\text{citoplasma}}\times100=51,0\pm\unit[11,9]{\%}$.
-  \item[Tipo2:] ~
-    \begin{description}
-      \item[Subtipo2.1:] Descrição minuciosa deste tipo.
-	Estou incluindo um pouco de texto extra para mostrar como a formatação fica impecável.
-      \item[Subtipo2.2:] Descrição minuciosa deste tipo.
-	Estou incluindo um pouco de texto extra para mostrar como a formatação fica impecável.
-    \end{description}
-  \item[Tipo3:] Descrição minuciosa deste tipo.
-	Estou incluindo um pouco de texto extra para mostrar como a formatação fica impecável.
-\end{description}
+\section{Discussão}
+\label{cap4:discussao}
+
+Mais conversa e podemos ter outra figura.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{ilustracao-pavani}
+	\caption[Outra imagem estranha.]{Posso colocar um texto diferente. Posso
+	usar letras gregas (ex.:  $\mu$) em vários lugares.}
+	\label{fig:pavani}
+\end{figure}
+
+E, para mudar a narrativa, crie uma lista de tópicos\ldots
+
+\begin{enumerate}
+	\item Primeiro tópico
+	\item Outro tópico
+\end{enumerate}
+
+Encerre.
