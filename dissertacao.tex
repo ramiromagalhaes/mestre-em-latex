@@ -1,0 +1,30 @@
+% Classe do documento
+\documentclass[twoside,a4paper,11pt]{report}
+
+% Pacotes e comandos customizados
+\include{pacotes}
+\include{configuracoes}
+\include{definicoes}
+
+% Início do texto
+\begin{document}
+
+\include{pre}
+
+\include{cap1}
+\include{cap2}
+\include{cap3}
+\include{cap4}
+\include{cap5}
+
+% Formato da bibliografia
+% Pode ser abnt ou sbc. Os 2 estão incluídos na pasta
+\bibliographystyle{abnt}
+% Arquivo .bib
+\bibliography{mestre}
+
+% Apêndice(s)
+%\include{apendice}
+
+% Fim do texto
+\end{document}
