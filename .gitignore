@@ -1,3 +1,13 @@
 .*.sw[a-z]
 *.un~
 Session.vim
+.project
+.texlipse
+*.pdf
+*.gz
+*.log
+tmp
+*~
+*.nlo
+*.nls
+.settings
